@@ -45,7 +45,7 @@ object Json {
   */
 trait Encoder[-A] {
 
-  def encode(value: A): Json
+   def encode(value: A): Json
 
   /**
     * Transforms this `Encoder[A]` into an `Encoder[B]`, given a transformation function
@@ -72,9 +72,6 @@ object Encoder extends EncoderInstances {
   def fromFunction[A](f: A => Json) = new Encoder[A] {
     def encode(value: A): Json = f(value)
   }
-
-  implicit val intEncoder11: Encoder[Int] =
-    fromFunction(n => Json.Num(BigDecimal(n)))
 
 }
 
