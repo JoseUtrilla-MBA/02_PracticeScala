@@ -5,4 +5,7 @@ target
 null
 .scalafix.conf
 webui.sbt
+<<<<<<< HEAD
 assignment.sbt
+=======
+>>>>>>> 459c8195d13fa991bccff06fad554128495b7b8f
