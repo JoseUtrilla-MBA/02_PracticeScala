@@ -1,0 +1,8 @@
+.bsp/
+.idea/
+project/target
+target
+null
+.scalafix.conf
+webui.sbt
+assignment.sbt
